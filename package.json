@@ -10,7 +10,10 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "docker:build":   "docker build -t realtime-analytics-dashboard .",
+    "docker:run":     "docker run -p 8080:80 realtime-analytics-dashboard",
+    "docker:stop":    "docker stop $(docker ps -q --filter ancestor=realtime-analytics-dashboard)"
   },
   "dependencies": {
     "date-fns": "^4.1.0",

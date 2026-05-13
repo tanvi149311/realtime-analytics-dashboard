@@ -1,0 +1,21 @@
+# Dependencies — reinstalled inside container
+node_modules
+
+# Build output — rebuilt inside container
+dist
+
+# Git files — not needed in container
+.git
+.gitignore
+
+# Local env files — use Docker env vars instead
+.env
+.env.local
+
+# Test files — not needed in production image
+src/__tests__
+coverage
+
+# Editor files
+.vscode
+.DS_Store
